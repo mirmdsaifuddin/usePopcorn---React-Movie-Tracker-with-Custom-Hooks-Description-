@@ -13,7 +13,7 @@ export function useMovies(KEY, query, handleCloseMovie) {
           setISLoader(true);
           setError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
+            `https://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
             { signal: controller.signal }
           );
 
@@ -24,7 +24,7 @@ export function useMovies(KEY, query, handleCloseMovie) {
             throw new Error(data.Error || "Movie Not Found");
           setMovies(data.Search);
           setError("");
-          //console.log(data.Search);
+          console.log(data.Search);
         } catch (err) {
           if (err.name !== "AbortError") {
             console.error(err.message);
