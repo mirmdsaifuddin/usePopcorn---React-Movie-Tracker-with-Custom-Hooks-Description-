@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/usePopcorn---React-Movie-Tracker-with-Custom-Hooks-Description-/static/css/main.9a4eb742.css",
+    "main.js": "/usePopcorn---React-Movie-Tracker-with-Custom-Hooks-Description-/static/js/main.20da7127.js",
+    "index.html": "/usePopcorn---React-Movie-Tracker-with-Custom-Hooks-Description-/index.html",
+    "main.9a4eb742.css.map": "/usePopcorn---React-Movie-Tracker-with-Custom-Hooks-Description-/static/css/main.9a4eb742.css.map",
+    "main.20da7127.js.map": "/usePopcorn---React-Movie-Tracker-with-Custom-Hooks-Description-/static/js/main.20da7127.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a4eb742.css",
+    "static/js/main.20da7127.js"
+  ]
+}
