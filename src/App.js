@@ -97,7 +97,6 @@ function Logo() {
 }
 
 function SearchBar({ query, setQuery }) {
-
   const inputEl = useRef(null);
   // useEffect(function () {
   //   function callback(e) {
@@ -232,7 +231,6 @@ function MovieDetails({ selectedId, onCloseMovie, onWatchedMovie, watched }) {
     Genre: genre,
   } = movie;
 
-  
   useKey("Escape", onCloseMovie);
 
   useEffect(
@@ -240,7 +238,7 @@ function MovieDetails({ selectedId, onCloseMovie, onWatchedMovie, watched }) {
       async function getMovieDetails() {
         setIsLoading(true);
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`
+          `https://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`
         );
         const data = await res.json();
         setMovie(data);
